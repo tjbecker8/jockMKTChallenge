@@ -29,7 +29,7 @@ componentWillReceiveProps(nextProps) {
 }
 
 
-sort = (type) => {
+ sort = (type) => {
   const array = this.state.data
   if (type === 'projected') {
     var sort = array.sort((a, b) => {
@@ -76,7 +76,7 @@ render() {
   <TouchableOpacity
   onPress={() => this.setState({dialogVisible: true})}
   >
-    <Text style={styles.touchText}>Sort Items</Text>
+    <Text style={styles.touchText}>Sort Players</Text>
   </TouchableOpacity>
 
 </View>
@@ -143,5 +143,6 @@ const styles =  StyleSheet.create({
     textAlign: 'right',
     paddingTop: 20,
     fontSize: 22,
+    paddingBottom: 10,
   }
 })

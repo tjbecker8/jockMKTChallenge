@@ -38,7 +38,7 @@ export default class Main extends Component {
 //for search user data
     const searchData = this.state.data
     const filtered = searchData.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
-
+    console.log(filtered);
 
     return(
 
@@ -53,6 +53,7 @@ export default class Main extends Component {
       onChangeText={(term) => { this.searchUpdated(term) }}
       style={styles.searchInput}
       placeholder="Search by player name"
+
       />
 
 
@@ -74,6 +75,8 @@ const styles =  StyleSheet.create({
     borderColor: '#CCC',
     borderWidth: 1,
     height: 60,
+    color: 'blue',
+    fontSize: 20,
   },
 
 })

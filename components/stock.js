@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 
  const Stock = (props) => {
 
-   
+
    return (
      <View style={styles.container}>
       <Image
